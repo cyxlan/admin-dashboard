@@ -1,0 +1,19 @@
+:root {
+  --accent: #1992d4;
+  --bg: #e2e8f0;
+}
+
+.container {
+  display: grid;
+  grid: 100px auto / 350px auto;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--accent);
+  grid-row: 1 / -1;
+}
+
+main {
+  background-color: var(--bg);
+}
