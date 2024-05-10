@@ -1,6 +1,11 @@
 :root {
   --accent: #1992d4;
   --bg: #e2e8f0;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
 }
 
 .container {
@@ -9,9 +14,23 @@
   height: 100vh;
 }
 
+/* sidebar */
 .sidebar {
   background-color: var(--accent);
   grid-row: 1 / -1;
+  padding: 20px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 2.25;
+  }
+  ul + ul {
+    padding-top: 40px;
+  }
 }
 
 main {
