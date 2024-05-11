@@ -54,14 +54,18 @@ header {
   }
 }
 
+.pfp {
+  background-color: var(--accent-2);
+  border-radius: 50%;
+}
+.header-icon {
+  background-color: grey;
+  height: 40px;
+  width: 40px;
+}
+
 .search-wrap {
   gap: 20px;
-
-  .search-icon {
-    background-color: grey;
-    height: 40px;
-    width: 40px;
-  }
   input[type="search"] {
     height: 40px;
     width: 800px;
@@ -71,12 +75,22 @@ header {
   }
 }
 
+.user-controls-wrap {
+  gap: 30px;
+
+  .pfp {
+    height: 60px;
+    width: 60px;
+  }
+  p {
+    font-weight: 600;
+  }
+}
+
 .user-greeting-wrap {
   .pfp {
-    background-color: var(--accent-2);
     height: 80px;
     width: 80px;
-    border-radius: 50%;
     margin-right: 20px;
   }
   .username {
