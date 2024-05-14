@@ -137,8 +137,8 @@ button svg {
   }
 }
 
+/* main content */
 main {
-  height: 100%;
   padding: 30px;
   background-color: var(--bg);
   display: grid;
@@ -151,6 +151,7 @@ main {
   }
 }
 
+/* projects */
 .section-projects {
   grid-row: 1 / -1;
 }
@@ -160,6 +161,10 @@ main {
   gap: 30px;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
   background: var(--white);
   border-radius: 10px;
   border-left: 10px solid var(--accent-2);
@@ -173,4 +178,9 @@ main {
     font-size: 0.9rem;
     line-height: 1.4;
   }
+}
+.project-btns {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
 }
