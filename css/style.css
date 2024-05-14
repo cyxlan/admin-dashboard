@@ -3,6 +3,7 @@
   --accent-2: #f0b429;
   --bg: #e2e8f0;
   --white: #ffffff;
+  --grey: #636363;
 }
 
 body {
@@ -145,7 +146,7 @@ main {
   gap: 30px;
 
   section > h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-bottom: 15px;
   }
 }
@@ -158,6 +159,18 @@ main {
   grid: repeat(3, 1fr) / repeat(2, 1fr);
   gap: 30px;
 }
-.project {
+.project-card {
   background: var(--white);
+  border-radius: 10px;
+  border-left: 10px solid var(--accent-2);
+  padding: 30px 20px;
+  h3 {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+  }
+  p {
+    color: var(--grey);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 }
