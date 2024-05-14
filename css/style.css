@@ -138,14 +138,26 @@ button svg {
 
 main {
   height: 100%;
+  padding: 30px;
   background-color: var(--bg);
+  display: grid;
+  grid: repeat(2, 1fr) / 3fr 1fr;
+  gap: 30px;
+
+  section > h2 {
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+  }
 }
 
+.section-projects {
+  grid-row: 1 / -1;
+}
 .projects-container {
   display: grid;
   grid: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 30px;
 }
 .project {
   background: var(--white);
-
 }
