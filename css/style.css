@@ -77,10 +77,9 @@ header {
   background-color: var(--accent-2);
   border-radius: 50%;
 }
-.header-icon {
-  background-color: grey;
-  height: 40px;
-  width: 40px;
+button svg {
+  width: 25px;
+  height: 25px;
 }
 
 .search-wrap {
