@@ -5,6 +5,7 @@
   --white: #ffffff;
   --grey: #636363;
   --light-grey: #d2d2d2;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -68,6 +69,9 @@ header {
   grid: repeat(2, auto) / repeat(2, auto);
   align-items: center;
   gap: 40px;
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--shadow);
 
   & > div {
     display: flex;
@@ -158,6 +162,7 @@ main {
   background: var(--white);
   border-radius: 10px;
   padding: 30px;
+  box-shadow: var(--shadow);
 }
 .project-card p,
 .announcement p {
