@@ -63,12 +63,11 @@ body {
 
 /* header */
 header {
-  width: 100%;
   padding: 30px 50px;
   display: grid;
   grid: repeat(2, auto) / repeat(2, auto);
   align-items: center;
-  gap: 40px;
+  row-gap: 40px;
   position: relative;
   z-index: 10;
   box-shadow: var(--shadow);
