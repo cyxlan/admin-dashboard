@@ -17,6 +17,12 @@ body {
   height: 100vh;
 }
 
+.sidebar ul,
+.trending-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* sidebar */
 .sidebar {
   background-color: var(--accent);
@@ -46,8 +52,6 @@ body {
     }
   }
   ul {
-    list-style-type: none;
-    padding: 0;
     font-size: 1.2rem;
     line-height: 2.5;
     svg {
@@ -79,6 +83,12 @@ header {
   background-color: var(--accent-2);
   border-radius: 50%;
 }
+.user-controls-wrap .pfp,
+.trending-container .pfp {
+    height: 60px;
+    width: 60px;
+}
+
 button svg {
   width: 25px;
   height: 25px;
@@ -97,11 +107,6 @@ button svg {
 
 .user-controls-wrap {
   gap: 30px;
-
-  .pfp {
-    height: 60px;
-    width: 60px;
-  }
   p {
     font-weight: 600;
   }
@@ -206,5 +211,20 @@ main {
     border-top: 1px solid var(--light-grey);
     padding-top: 20px;
     margin-top: 20px;
+  }
+}
+
+/* trending */
+.trending-container .user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+  font-size: 0.8rem;
+  .title {
+    color: var(--grey);
+  }
+  & + .user {
+    padding-top: 30px;
   }
 }
