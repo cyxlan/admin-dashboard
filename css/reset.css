@@ -34,3 +34,6 @@ button {
 input {
   border: none;
 }
+button, input {
+  color: inherit;
+}

@@ -1,15 +1,17 @@
 :root {
-  --accent: #1992d4;
-  --accent-2: #f0b429;
-  --bg: #e2e8f0;
-  --white: #ffffff;
-  --grey: #636363;
-  --light-grey: #d2d2d2;
+  --accent: #8f0000;
+  --accent2: #b42a2a;
+  --bg: #3b2626;
+  --bg2: #503e3e;
+  --text: #dddddd;
+  --text2: #b09696;
+  --grey: #6a5656;
   --shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 body {
   font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+  color: var(--text);
 }
 
 .container {
@@ -27,7 +29,6 @@ body {
 .sidebar {
   background-color: var(--accent);
   padding: 30px;
-  color: var(--white);
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -68,6 +69,7 @@ header {
   grid: repeat(2, auto) / repeat(2, auto);
   align-items: center;
   row-gap: 40px;
+  background: var(--bg);
   position: relative;
   z-index: 10;
   box-shadow: var(--shadow);
@@ -91,6 +93,7 @@ header {
 button svg {
   width: 25px;
   height: 25px;
+  color: var(--text);
 }
 
 .search-wrap {
@@ -100,7 +103,7 @@ button svg {
     width: 800px;
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: var(--bg);
+    background-color: var(--bg2);
   }
 }
 
@@ -135,18 +138,23 @@ button svg {
 
   button {
     background-color: var(--accent);
-    color: var(--white);
     font-weight: 600;
     padding: 10px;
     min-width: 125px;
     border-radius: 30px;
+    transition: 200ms ease-out;
+
+    &:hover,
+    &:focus {
+      background: var(--accent2);
+    }
   }
 }
 
 /* main content */
 main {
   padding: 30px;
-  background-color: var(--bg);
+  background-color: var(--bg2);
   display: grid;
   grid: repeat(2, auto) / 3fr 1fr;
   gap: 30px;
@@ -158,14 +166,14 @@ main {
 }
 
 .card {
-  background: var(--white);
+  background: var(--bg);
   border-radius: 10px;
   padding: 30px;
   box-shadow: var(--shadow);
 }
 .project-card p,
 .announcement p {
-  color: var(--grey);
+  color: var(--text2);
   line-height: 1.4;
 }
 
@@ -185,7 +193,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  border-left: 10px solid var(--accent-2);
+  border-left: 10px solid var(--accent2);
   padding: 30px 20px;
   h3 {
     font-size: 1.05rem;
@@ -211,7 +219,7 @@ main {
   }
   /* separator line */
   & + .announcement {
-    border-top: 1px solid var(--light-grey);
+    border-top: 1px solid var(--grey);
     padding-top: 20px;
     margin-top: 20px;
   }
@@ -225,7 +233,7 @@ main {
   align-items: center;
   font-size: 0.8rem;
   .title {
-    color: var(--grey);
+    color: var(--text2);
   }
   & + .user {
     padding-top: 30px;
