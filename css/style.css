@@ -14,7 +14,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 350px auto;
+  grid-template-columns: minmax(min-content, 350px) auto;
 }
 
 .sidebar ul,
