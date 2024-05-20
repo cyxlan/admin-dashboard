@@ -66,7 +66,7 @@ body {
 header {
   padding: 30px 50px;
   display: grid;
-  grid: repeat(2, auto) / repeat(2, auto);
+  grid: repeat(2, auto) / 2fr 1fr;
   align-items: center;
   row-gap: 40px;
   background: var(--bg);
@@ -100,16 +100,20 @@ button svg {
   gap: 20px;
   input[type="search"] {
     height: 40px;
-    width: 800px;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 20px;
     background-color: var(--bg2);
   }
 }
 
+.user-controls-wrap,
+.btn-wrap {
+  justify-self: end;
+}
+
 .user-controls-wrap {
   gap: 30px;
-  justify-self: end;
   p {
     font-weight: 600;
   }
@@ -156,7 +160,7 @@ main {
   padding: 30px;
   background-color: var(--bg2);
   display: grid;
-  grid: repeat(2, auto) / 3fr 1fr;
+  grid: repeat(2, auto) / 3fr minmax(300px, 1fr);
   gap: 30px;
 
   section > h2 {
@@ -183,7 +187,7 @@ main {
 }
 .projects-container {
   display: grid;
-  grid: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
   /* take up rest of section (minus header height) */
   height: calc(100% - (1.2rem * 1.5 + 15px));
