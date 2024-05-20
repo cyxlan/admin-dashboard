@@ -81,7 +81,6 @@ header {
 }
 
 .pfp {
-  background-color: var(--accent-2);
   border-radius: 50%;
 }
 .user-controls-wrap .pfp,
