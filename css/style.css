@@ -146,11 +146,11 @@ button svg {
     padding: 10px;
     min-width: 125px;
     border-radius: 30px;
-    transition: 200ms ease-out;
+    transition: 200ms background-color ease-out;
 
     &:hover,
     &:focus {
-      background: var(--accent2);
+      background-color: var(--accent2);
     }
   }
 }
@@ -216,6 +216,16 @@ main {
   display: flex;
   gap: 15px;
   justify-content: flex-end;
+  button {
+    padding: 0 5px;
+    svg {
+      transition: 200ms color ease-out;
+    }
+    &:hover svg,
+    &:focus svg {
+      color: var(--text2);
+    }
+  }
 }
 
 /* announcements */
